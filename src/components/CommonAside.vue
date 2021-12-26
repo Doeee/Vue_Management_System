@@ -47,14 +47,14 @@ export default {
     return {
       menu: [
         {
-          path: "/",
+          path: "index",
           name: "home",
           label: "首页",
           icon: "s-home",
           url: "Home/Home",
         },
         {
-          // path: "/mall",
+          path: "/mall",
           name: "mall",
           label: "商品管理",
           icon: "video-play",
@@ -67,27 +67,27 @@ export default {
           icon: "user",
           url: "UserManage/UserManage",
         },
-        {
-          label: "其他",
-          icon: "location",
-          path: "/other",
-          children: [
-            {
-              path: "/page1",
-              name: "page1",
-              label: "页面1",
-              icon: "setting",
-              url: "Other/PageOne",
-            },
-            {
-              path: "/page2",
-              name: "page2",
-              label: "页面2",
-              icon: "setting",
-              url: "Other/PageTwo",
-            },
-          ],
-        },
+        // {
+        //   label: "其他",
+        //   icon: "location",
+        //   path: "index//other",
+        //   children: [
+        //     {
+        //       path: "/page1",
+        //       name: "page1",
+        //       label: "页面1",
+        //       icon: "setting",
+        //       url: "Other/PageOne",
+        //     },
+        //     {
+        //       path: "/page2",
+        //       name: "page2",
+        //       label: "页面2",
+        //       icon: "setting",
+        //       url: "Other/PageTwo",
+        //     },
+        //   ],
+        // },
       ],
     };
   },

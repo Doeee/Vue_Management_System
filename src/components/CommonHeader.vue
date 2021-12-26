@@ -9,7 +9,7 @@
       ></el-button>
       <span
         ><el-breadcrumb separator="/">
-          <el-breadcrumb-item :to="{ path: '/' }">首页</el-breadcrumb-item>
+          <el-breadcrumb-item :to="{ path: '/' }">退出</el-breadcrumb-item>
         </el-breadcrumb></span
       >
     </div>

@@ -10,7 +10,7 @@
         :load="load"
         :tree-props="{ children: 'children', hasChildren: 'hasChildren' }"
       >
-        <el-table-column prop="date" sortable label="创建日期" width="180">
+        <el-table-column prop="date" label="创建日期" width="180">
         </el-table-column>
         <el-table-column prop="username" label="用户名" width="180">
         </el-table-column>

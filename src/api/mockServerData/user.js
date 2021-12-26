@@ -4,7 +4,17 @@ import { nanoid } from "nanoid";
 
 // user数据
 let adminListInit = 0
-let adminList = []
+let adminList = [
+  {
+    id: nanoid(),
+    type: "1",
+    date: `2020-12-1`,
+    username: 'admin',
+    password: '123456',
+    operateButton: true,
+    authority: ["首页", "商品管理", "用户管理"]
+  }
+]
 let userList = []
 let userListInit = 0
 let visitList = []
@@ -55,7 +65,7 @@ export default {
     }
   },
   getVisitData: () => {
-    if (userListInit === 0) {
+    if (visitListInit === 0) {
       userListInit = 1;
       for (let i = 0; i < 5; i++) {
         visitList.push(
@@ -152,7 +162,6 @@ export default {
     } else if (newUser.type === "3") {
       visitList.push(newUser);
     }
-    console.log(adminList)
     if (body)
       return {
         code: 20000

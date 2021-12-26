@@ -1,0 +1,50 @@
+.container{
+  position: relative;
+  width: 99vw;
+  height: 99vh;
+  background: #dbe1e133;
+
+  .contentOuter{
+    width: 45vw;
+    height:47vh;
+    border-radius: 35px;
+    box-shadow: -0.5px 1px 0px 0 #464d5226;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top:-25vh;
+    margin-left:-18vw;
+    .content{
+      display: flex;
+      flex-direction: row;
+      .leftInner{
+        width: 50%;
+        .carouseDiv{
+          .carouselImg{
+            border-radius:  35px;
+            box-shadow: -0.5px 1px 0px 0 #464d5226;
+            height: 43vh;
+          }
+        }
+        
+      }
+      .rightInner{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .loginTitle{
+          margin: auto;
+          margin: 20px 0 50px 0;
+          font-size: 30px;
+        }
+        .loginFrom{
+          .loginButton{
+            width: 10vw;
+            margin: 20px 0 0 0;
+          }
+        }
+      }
+    }
+  }
+}

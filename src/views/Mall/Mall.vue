@@ -102,7 +102,7 @@
               >
             </template>
           </el-table-column>
-          <el-table-column label="操作">
+          <el-table-column label="操作" fixed="right">
             <template slot-scope="scope">
               <el-button
                 style="margin-left: 10px"
@@ -156,7 +156,7 @@
 <script>
 import { getMall, delMall, modifyMall } from "../../api/data";
 export default {
-  name: "Mall",
+  name: "mall",
   props: [""],
   data() {
     return {

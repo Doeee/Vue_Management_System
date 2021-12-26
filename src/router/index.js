@@ -9,31 +9,46 @@ Vue.use(VueRouter)
 
 const routes = [
   {
-    path: '/',
+    path: '',
+    redirect: "/login",
+    component: () => import('@/views/Home/Home')
+  },
+  {
+    path: '/index',
     name: 'Main',
     component: Main,
     children: [
       {
-        path: '/',
+        path: '',
         name: 'home',
         component: () => import('@/views/Home/Home')
       },
       {
-        path: '/mall',
+        path: 'home',
+        name: 'home',
+        component: () => import('@/views/Home/Home')
+      },
+      {
+        path: 'mall',
         name: 'mall',
         component: () => import('@/views/Mall/Mall')
       },
       {
-        path: '/user',
+        path: 'user',
         name: 'user',
         component: () => import('@/views/User/User')
       },
       {
-        path: '/page1',
+        path: 'page1',
         name: 'page1',
         component: () => import('@/views/Other/Other')
       }
     ]
+  },
+  {
+    path: '/login',
+    name: 'Login',
+    component: () => import('@/views/Login/Login')
   },
 ]
 
