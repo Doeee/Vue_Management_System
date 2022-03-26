@@ -3,6 +3,7 @@
     <el-aside width="auto">
       <common-aside></common-aside>
     </el-aside>
+
     <el-container>
       <el-header>
         <common-header></common-header>

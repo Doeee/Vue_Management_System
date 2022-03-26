@@ -36,6 +36,7 @@
               <el-form-item label="密码">
                 <el-input
                   ref="strPassTxb"
+                  class="inline-input"
                   placeholder="请输入密码"
                   v-model="form.password"
                   show-password
@@ -113,7 +114,7 @@ export default {
           password: strPass,
         },
       ];
-      console.log("初始化restaurants：", this.restaurants);
+      //console.log("初始化restaurants：", this.restaurants);
       if (strName) {
         this.form.username = strName;
       }
@@ -131,7 +132,7 @@ export default {
         );
       });
       if (canLogin) {
-        console.log("form", this.form);
+        //console.log("form", this.form);
         if (this.form.remember) {
           localStorage.setItem("keyName", this.form.username);
           localStorage.setItem("keyPass", this.form.password);
@@ -175,4 +176,7 @@ export default {
 
 <style lang='scss' scoped>
 @import "~@/assets/scss/login";
+/deep/.el-input__inner {
+  padding-right: 30px;
+}
 </style>

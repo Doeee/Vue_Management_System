@@ -237,7 +237,6 @@ export default {
     handleSave(index, row, ruleForm) {
       this.$refs[ruleForm].validate((valid) => {
         if (valid) {
-          console.log(index, row);
           row.iseditor = false;
           modifyMall(row).then(() => {
             getMall().then((res) => {
